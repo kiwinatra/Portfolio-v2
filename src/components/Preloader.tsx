@@ -24,10 +24,10 @@ const slideUp = {
 };
 
 const words = [
+  "Hi",
   "Hello",
-  "Bonjour",
   "Ciao",
-  "Olà",
+  "Privet",
   "やあ",
   "Hallå",
   "Guten tag",

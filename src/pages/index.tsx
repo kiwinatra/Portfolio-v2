@@ -9,6 +9,9 @@ import {
   SearchCheck,
   Eye,
   MonitorSmartphone,
+  Gauge,
+  CandyOff,  
+  Gamepad2       
 } from "lucide-react";
 import { TriangleDownIcon } from "@radix-ui/react-icons";
 import Spline from "@splinetool/react-spline";
@@ -28,74 +31,111 @@ import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
 
 const aboutStats = [
-  { label: "Years of experience", value: "3+" },
-  { label: "Technologies mastered", value: "5+" },
-  { label: "Companies worked with", value: "15+" },
+  { label: "Years of experience", value: "8+" },
+  { label: "Technologies mastered", value: "12+" },
+  { label: "Companies worked with", value: "4+" },
 ];
 
 const projects = [
   {
-    title: "Unqueue",
-    description: "E-commerce platform for selling digital products",
-    image: "/assets/unqueue.webm",
-    href: "https://unqueue.shop/",
+    title: "EaglerCraft Recode",
+    description: "Minecraft in browser!",
+    image: "/assets/mc.jpg",
+    href: "https://github.io/kiwinatra/eaglercraft-recode",
   },
   {
-    title: "InfiniteVPS",
-    description: "High performance VPS hosting solution",
-    image: "/assets/infinitevps.webm",
-    href: "#",
+    title: "TestX",
+    description: "Test Creation platform.",
+    image: "/assets/testx.png",
+    href: "https://shonaax.github.io/testx",
   },
   {
-    title: "TranslateBot",
-    description: "Powerful Multilingual Translation Bot for Discord",
-    image: "/assets/translate_bot.webm",
-    href: "https://translatebot.app/",
+    title: "Fmusica",
+    description: "Localspotify :)",
+    image: "/assets/fm.png",
+    href: "https://shonaax.github.io/fm",
   },
   {
-    title: "Wrona",
-    description: "Robotics-focused technology company",
-    image: "/assets/wrona.jpeg",
-    href: "https://www.wrona.com/",
+    title: "GameVault",
+    description: "games collection",
+    image: "/assets/g.png",
+    href: "https://shonaax.github.io/games/vault",
   },
   {
-    title: "This website",
-    description: "My personal website",
-    image: "/assets/portfolio.webm",
-    href: "https://github.com/wendoj/portfolio",
+    title: "Firework",
+    description: "canvas.js testing",
+    image: "/assets/fr.png",
+    href: "https://shonaax.github.io/frw/firework",
   },
+  {
+    title: "Min-browser",
+    description: "browser made in React.",
+    image: "/assets/min.png",
+    href: "https://github.com/minbrowser/min?tab=readme-ov-file",
+  },
+  {
+    title: "Rom-Kitter (made by me and potemkin)",
+    description: "root selector",
+    image: "/assets/fx.png",
+    href: "https://kiwinatra.github.io/rom",
+  },
+  {
+    title: "ElemSocial Android app",
+    description: "Android app for ElemSocial.com made in Kotlin",
+    image: "/assets/el.png",
+    href: "https://elemsocial.com",
+  },
+  
 ];
 
 const services = [
   {
     service: "Frontend Development",
     description:
-      "Creating stellar user interfaces and web experiences using the latest technologies.",
+      "Building modern, high-performance user interfaces using React, Next.js and cutting-edge web technologies.",
     icon: Code2,
   },
   {
-    service: "UX Design",
+    service: "UX/UI Design",
     description:
-      "Building intuitive, user-centric designs that drive engagement and conversion.",
+      "Creating intuitive, user-centered designs with Figma that enhance engagement and drive conversions.",
     icon: Frame,
   },
   {
     service: "SEO Optimization",
     description:
-      "Enhancing your website's visibility in search engines for increased organic traffic.",
+      "Comprehensive SEO strategies to boost your website's search rankings and organic traffic growth.",
     icon: SearchCheck,
   },
   {
-    service: "Responsive Design",
+    service: "Responsive Development",
     description:
-      "Designing websites that look and perform equally well on all devices and screen sizes.",
+      "Pixel-perfect responsive websites that deliver flawless experiences across all devices and screen sizes.",
     icon: MonitorSmartphone,
   },
   {
     service: "Backend Development",
     description:
-      "Developing robust, scalable server-side logic for a wide range of web applications.",
+      "Architecting secure, scalable server solutions with Node.js, Express and modern database technologies.",
     icon: Eye,
+  },
+  {
+    service: "Performance Optimization",
+    description:
+      "Turbocharging your website's speed and efficiency through advanced optimization techniques.",
+    icon: Gauge,
+  },
+  {
+    service: "Web Accessibility",
+    description:
+      "Implementing WCAG standards to make your website inclusive for all users.",
+    icon: CandyOff,
+  },
+  {
+    service: "P.S. From MOB Games",
+    description:
+      "Former contributor to the development team behind Poppy Playtime - bringing game-like creativity to web experiences!",
+    icon: Gamepad2,
   },
 ];
 
@@ -190,9 +230,10 @@ export default function Home() {
               data-scroll-speed=".09"
               className="flex flex-row items-center space-x-1.5"
             >
-              <span className={styles.pill}>next.js</span>
-              <span className={styles.pill}>tailwindcss</span>
-              <span className={styles.pill}>typescript</span>
+              <span className={styles.pill}>C++</span>
+              <span className={styles.pill}>Java/JDK/Kotlin</span>
+              <span className={styles.pill}>TS/next.js</span>
+              <span className={styles.pill}>tawlindcss</span>
             </div>
             <div>
               <h1
@@ -206,7 +247,7 @@ export default function Home() {
                   <br />
                 </span>
                 <span className="clash-grotesk text-gradient text-6xl 2xl:text-8xl">
-                  WendoJ.
+                  kiwinatra.
                 </span>
               </h1>
               <p
@@ -225,7 +266,7 @@ export default function Home() {
               data-scroll-speed=".06"
               className="flex flex-row items-center space-x-1.5 pt-6"
             >
-              <Link href="mailto:wendoj@proton.me" passHref>
+              <Link href="https://t.me/nanomi_suan" passHref>
                 <Button>
                   Get in touch <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
@@ -275,9 +316,9 @@ export default function Home() {
                 target="_blank"
                 className="underline"
               >
-                TypeScript, Tailwind, and Next.js
+                C++, Java, Kotlin, nextjs and more
               </Link>{" "}
-              since 2021. My experience spans from startups to mid-sized
+              since 2018. My experience spans from startups to mid-sized
               companies, where I&apos;ve been instrumental in the entire product
               design process; from ideation and wireframing, through
               prototyping, to the delivery of the final product, all while
@@ -446,7 +487,7 @@ export default function Home() {
               I&apos;m currently available for freelance work and open to
               discussing new projects.
             </p>
-            <Link href="mailto:wendoj@proton.me" passHref>
+            <Link href="https://t.me/nanomi_suan" passHref>
               <Button className="mt-6">Get in touch</Button>
             </Link>
           </div>
